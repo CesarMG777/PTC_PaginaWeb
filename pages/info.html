@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Información - Restock</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Hoja de estilos personalizada -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- Barra de navegación superior -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <!-- Logotipo y nombre del sistema -->
+      <a class="navbar-brand d-flex align-items-center" href="../index.html">
+        <img src="../assets/logo_-removebg-preview.png" alt="logo" width="150" class="me-2">
+
+      </a>
+
+      <!-- Botón para mostrar/ocultar menú en pantallas pequeñas -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Enlaces del menú -->
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" href="info.html">Información</a></li>
+          <li class="nav-item"><a class="nav-link" href="descarga.html">Descarga</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- =====================  CONTENIDO PRINCIPAL  ===================== -->
+  <main class="container py-5">
+    <!-- Título general -->
+    <h1 class="h3 mb-4">Información detallada del sistema</h1>
+    <p class="mb-5">
+      El Sistema fue diseñado para que cada formulario cumpla con un rol específico dentro de la gestión de inventario.
+      La aplicación inicia con un formulario de inicio de sesión para posteriormente permitirle al usuario acceder a los
+      distintos módulos del Dashboard. A continuación se muestra la función que cumple cada formulario dentro del Sistema Restock:
+    </p>
+
+    <!-- ====== Sección Login ====== -->
+    <section class="mb-5">
+      <h2 class="h4 mb-3">Login</h2>
+      <div class="row align-items-start g-4">
+        <!-- Caja de texto con descripción -->
+        <div class="col-md-6">
+          <div class="border rounded p-3 bg-light">
+            <p><strong>Formulario:</strong> frmInicio.cs</p>
+            <p><strong>Función:</strong> Permite la validación de las credenciales de acceso.</p>
+            <p><strong>Descripción:</strong> El usuario debe ingresar dentro de los TextBox su nombre de usuario.
+              Luego el programa valida los datos ingresados y permite el acceso al Dashboard.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="../assets/Formulario login.png" alt="Vista del formulario de inicio de sesión" class="img-fluid rounded shadow-sm">
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== Sección Dashboard ====== -->
+    <section>
+      <h2 class="h4 mb-3">Dashboard</h2>
+      <div class="row align-items-start g-4">
+        <!-- Caja de texto con descripción -->
+        <div class="col-md-6">
+          <div class="border rounded p-3 bg-light">
+            <p><strong>Formulario:</strong> frmDashboard.cs</p>
+            <p><strong>Función:</strong> Sirve como punto de acceso para los demás formularios.</p>
+            <p><strong>Descripción:</strong> Ofrece un menú desplegable con botones para poder navegar entre los distintos formularios.</p>
+          </div>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="../assets/Dashboard.png" alt="Vista del dashboard" class="img-fluid rounded shadow-sm">
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== Sección Clientes ====== -->
+    <section>
+      <h2 class="h4 mb-3">Clientes</h2>
+      <div class="row align-items-start g-4">
+        <!-- Caja de texto con descripción -->
+        <div class="col-md-6">
+          <div class="border rounded p-3 bg-light">
+            <p><strong>Formulario:</strong> frmAgregarClientes.cs, frmGestionarClientes.cs, frmVerClientes.cs</p>
+            <p><strong>Función:</strong> Permite la gestión de clientes dentro de la base de datos.</p>
+            <p><strong>Descripción:</strong> Ofrece un menú desplegable con botones para poder navegar entre los distintos formularios.</p>
+          </div>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="../assets/Clientes.png" alt="Vista de clientes" class="img-fluid rounded shadow-sm">
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== Sección Marca y Categoría ====== -->
+    <section>
+      <h2 class="h4 mb-3">Marca y Categoría</h2>
+      <div class="row align-items-start g-4">
+        <!-- Caja de texto con descripción -->
+        <div class="col-md-6">
+          <div class="border rounded p-3 bg-light">
+            <p><strong>Formulario:</strong> frmCategoria.cs, frmMarca.cs, frmMarcaCategoria.cs</p>
+            <p><strong>Función:</strong> Permite la gestión de marcas y categorías dentro de la base de datos.</p>
+            <p><strong>Descripción:</strong> El usuario puede agregar, editar, y visualizar las marcas y categorías.</p>
+          </div>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="../assets/Marca y categoria.png" alt="Vista de marca y categoria" class="img-fluid rounded shadow-sm">
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== Sección de Proveedores ====== -->
+    <section>
+      <h2 class="h4 mb-3">Proveedores</h2>
+      <div class="row align-items-start g-4">
+        <!-- Caja de texto con descripción -->
+        <div class="col-md-6">
+          <div class="border rounded p-3 bg-light">
+            <p><strong>Formulario:</strong> frmAgregarProveedor.cs, frmGestionarProveedor.cs, frmVerProveedor.cs</p>
+            <p><strong>Función:</strong> Permite la gestión de proveedores dentro de la base de datos.</p>
+            <p><strong>Descripción:</strong> El usuario puede agregar, editar y visualizar la información de los proveedores.</p>
+          </div>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="../assets/proveedores.png" alt="Vista de proveedores" class="img-fluid rounded shadow-sm">
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== Sección de Stock y Productos ====== -->
+    <section>
+      <h2 class="h4 mb-3">Stock y Productos</h2>
+      <div class="row align-items-start g-4">
+        <!-- Caja de texto con descripción -->
+        <div class="col-md-6">
+          <div class="border rounded p-3 bg-light">
+            <p><strong>Formulario:</strong> frmAgregarProductos.cs, frmGestionarProductos.cs, frmVerProductos.cs</p>
+            <p><strong>Función:</strong> Permite la gestión de marcas y categorías dentro de la base de datos.</p>
+            <p><strong>Descripción:</strong> El usuario puede agregar, editar y visualizar la información del stock y productos.</p>
+          </div>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="../assets/Stock y productos.png" alt="Vista de stock y productos" class="img-fluid rounded shadow-sm">
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== Sección de Usuarios ====== -->
+    <section>
+      <h2 class="h4 mb-3">Usuarios</h2>
+      <div class="row align-items-start g-4">
+        <!-- Caja de texto con descripción -->
+        <div class="col-md-6">
+          <div class="border rounded p-3 bg-light">
+            <p><strong>Formulario:</strong> frmAgregarUsuarios.cs, frmGestionarUsuarios.cs</p>
+            <p><strong>Función:</strong> Permite la gestión de los usuarios dentro de la base de datos.</p>
+            <p><strong>Descripción:</strong> El usuario puede agregar y editar la información de los usuarios.</p>
+          </div>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="../assets/Usuarios.png" alt="Vista de usuarios" class="img-fluid rounded shadow-sm">
+        </div>
+      </div>
+    </section>
+  </main> 
+
+  <!-- Pie de página -->
+  <footer class="bg-primary text-white py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <!-- Año actual se rellena con JavaScript -->
+      <div>© <span id="anio"></span> Instituto Técnico - Proyecto PTC</div>
+      <div>
+        <a href="contacto.html" class="text-white text-decoration-none me-3">Contacto</a>
+        <a href="descarga.html" class="text-white text-decoration-none">Descarga</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts de Bootstrap y librerías externas -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- Script personalizado -->
+  <script src="../js/main.js"></script>
+
+  <!-- Script para mostrar el año actual en el pie de página -->
+  <script>
+    // Inserta el año actual en el elemento con id="anio"
+    document.getElementById('anio').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

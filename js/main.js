@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{const f=document.getElementById('contactForm');if(f){f.addEventListener('submit',e=>{e.preventDefault();if(!f.checkValidity()){f.classList.add('was-validated');Swal.fire('Error','Completa todos los campos','error');return;}Swal.fire('Enviado','Gracias por tu mensaje','success');f.reset();f.classList.remove('was-validated');});}});

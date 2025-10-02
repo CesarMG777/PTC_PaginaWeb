@@ -1,0 +1,10 @@
+:root{--primary:#df760d;}body{background:#f8f9fa;font-family:Arial;}
+
+.bg-primary {
+  background-color: #348888 !important; /* Es el color que se le pondran, en la barra de navegación  en el pie de pagina */
+}
+
+.btnbtn-primary me-2 {
+  background-color: #348888 !important; /* Es el color que se le pondran, en la barra de navegación  en el pie de pagina */
+  border-color: #348888 !important;
+}

@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Descarga - Restock</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-bootstrap-4@5/bootstrap-4.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- Barra de navegación superior -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <!-- Logotipo y nombre del sistema -->
+      <a class="navbar-brand d-flex align-items-center" href="../index.html">
+        <img src="../assets/logo_-removebg-preview.png" alt="logo" width="150" class="me-2">
+
+      </a>
+
+      <!-- Botón para mostrar/ocultar menú en pantallas pequeñas -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Enlaces del menú -->
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="info.html">Información</a></li>
+          <li class="nav-item"><a class="nav-link active" href="descarga.html">Descarga</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <main class="container py-5">
+        <h1 class="h4">Descargar instalador</h1>
+        <h2 class="h2">Requisitos Mínimos</h2>
+        <ul>
+            <li>CPU: Intel Pentium D ó AMD Athlon 64 (K8) 2.6 GHz</li>
+            <li>RAM: 2GB</li>
+            <li>GPU (Integrada): Intel HD Graphics ó AMD (antes ATI) Radeon HD con OpenGL 2.1</li>
+            <li>Tarjeta gráfica: Nvidia GeForce 9600 GT ó AMD Radeon HD 2400 con OpenGL 3.1</li>
+            <li>Disco duro: Al menos 200 MB libres</li>
+        </ul>
+        <p><a id="btnDownload" href="../downloads/instalador.zip" class="btn btn-success">Descargar instalador (ZIP)</a></p>
+
+    <div class="container mt-5">
+        <div class="row">
+          <!-- Reseña 1 -->
+          <div class="col-md-6 mb-4">
+            <div class="card h-100">
+                <img class="bg-success text-white p-3" src="../assets/Reseña 1.png" alt="Reseña 1" >
+              <div class="card-body">
+                <h5 class="card-title">Eduardo Jose Tamayo Guardado</h5>
+                <p class="card-text"> 6 opiniones</p>
+                <p class="card-text"><em>Hace 9 meses</em></p>
+                <p class="card-text">Me gustó mucho el sistema ya que es muy práctico para usar en pequeñas empresas como la mía ya que van empezando en el emprendimiento, lo recomiendo muchísimo.</p>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Reseña 2 -->
+          <div class="col-md-6 mb-4">
+            <div class="card h-100">
+                <img class="bg-success text-white p-3" src="../assets/Reseña 2.png" alt="Reseña 2" >
+              <div class="card-body">
+                <h5 class="card-title">Pipee22 <span class="badge bg-success">Nueva</span></h5>
+                <p class="card-text">1 opinión</p>
+                <p class="card-text"><em>Hace 3 semanas</em></p>
+                <p class="card-text">Restock es un programa que me gustó muchísimo, es eficiente y práctico, complementando muchas cosas que manualmente se pasarían por alto. Pero lo que me llamó la atención fue ver cómo algo de otro mundo pero más real y comprensible hace más llevadero hacer las cosas. Ahora estoy más motivado de seguir con mi emprendimiento usando este programa.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+      <!-- Pie de página -->
+  <footer class="bg-primary text-white py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <!-- Año actual se rellena con JavaScript -->
+      <div>© <span id="anio"></span> Instituto Técnico - Proyecto PTC</div>
+      <div>
+        <a href="contacto.html" class="text-white text-decoration-none me-3">Contacto</a>
+        <a href="descarga.html" class="text-white text-decoration-none">Descarga</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts de Bootstrap y librerías externas -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- Script personalizado -->
+  <script src="../js/main.js"></script>
+
+  <!-- Script para mostrar el año actual en el pie de página -->
+  <script>
+    // Inserta el año actual en el elemento con id="anio"
+    document.getElementById('anio').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
